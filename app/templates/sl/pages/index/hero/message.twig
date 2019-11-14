@@ -1,0 +1,24 @@
+{% if is_state('pre-upload-proposals') %}
+  <h5 class="title is-4">Muy pronto vas a poder publicar tus proyectos</h5>
+  <h5 class="subtitle is-5">A partir del {{options()['proposals-launch']|date("d/m/Y")}} se abren los formularios para crear proyectos</h5>
+  <countdown-to date="{{options()['proposals-launch']}}" style="margin-bottom: 30px;"></countdown-to>
+{% elseif is_state('upload-proposals') %}
+  <h5 class="title is-4">¡Mejoremos juntos San Martín!</h5>
+  <h5 class="subtitle is-5">Presentá proyectos para tu barrio hasta el {{options()['proposals-deadline']|date("d/m/Y")}}</h5>
+  <countdown-closing date="{{options()['proposals-deadline']}}" what="El formulario" style="margin-bottom: 30px;"></countdown-closing>
+{% elseif is_state('pre-vote') %}
+  <h5 class="title is-4">¡Pronto comienza la votación 2019!</h5>
+  <h5 class="subtitle is-5">¡Se viene la votación de #PPSanLorenzo 2019, conocé los proyectos que participarán!</h5>
+  <countdown-to date="{{options()['vote-launch']}}" what="El formulario" style="margin-bottom: 30px;"></countdown-closing>
+{% elseif is_state('vote') %}
+  <h5 class="title is-4">¡Los proyectos se encuentran disponibles para votación!</h5>
+  <h5 class="subtitle is-5">¡Votá HOY por tus proyectos favoritos para un San Martín mejor!</h5>
+{% elseif is_state('pre-results') %}
+  <h5 class="title is-4">¡Gracias por haber participado!</h5>
+  <h5 class="subtitle is-5">¡Por haber participado en el #PPSanMartín 2020!<br>¡Muy pronto se publicarán los resultados!</h5>
+{% elseif is_state('results') %}
+  <h5 class="title is-4">¡Felicidades a todos y a los proyectos ganadores!</h5>
+  <h5 class="subtitle is-5">¡Ya podés conocer los proyectos seleccionados para el #PPSanMartín 2020!</h5>
+{% else %}
+ 
+{% endif %}

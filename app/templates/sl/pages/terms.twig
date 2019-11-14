@@ -1,0 +1,54 @@
+{% set show_footer = true %}
+{% set show_navbar = true %}
+{# set body_class = '' #}
+
+{% block title %}
+  Términos y Condiciones San Martín
+{% endblock %}
+
+{% extends 'master.twig' %}
+
+{% block body %}
+  <div class="hero is-primary">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <h1 class="title is-3">Términos y Condiciones San Martín</h1>
+        <nav class="breadcrumb is-centered is-marginless is-hidden-touch" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#acerca">Acerca de este sitio</a>
+            </li>
+            <li>
+              <a href="#usuarios">Usuarios, obligaciones y condiciones</a>
+            </li>
+            <li>
+              <a href="#privacidad">Políticas de privacidad</a>
+            </li>
+          </ul>
+        </nav>
+          <ul class="is-hidden-desktop">
+            <li>
+              <a href="#acerca">Acerca de este sitio</a>
+            </li>
+            <li>
+              <a href="#usuarios">Usuarios, obligaciones y condiciones</a>
+            </li>
+            <li>
+              <a href="#privacidad">Políticas de privacidad</a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2 content">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include 'sl/base/collab.twig' %}
+{% endblock %}

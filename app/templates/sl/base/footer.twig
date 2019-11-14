@@ -1,0 +1,42 @@
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4 has-text-centered-touch">
+        <ul>
+          <li>
+            <a href="{{path_for('showHome')}}">Inicio</a>
+          </li>
+          {% if not is_state('pre-upload-proposals') %}
+          <li>
+            <a href="{{path_for('showCatalogo')}}">Catálogo de proyectos</a>
+          </li>
+          {% endif %}
+          <li>
+            <a href="{{path_for('showFAQ')}}">Preguntas Frecuentes</a>
+          </li>
+          {# <li>
+            <a href="{{path_for('showTerminos')}}">Política de privacidad</a>
+          </li>
+          <li>
+            <a href="{{path_for('showAgenda')}}">Agenda</a>
+          </li> #}
+        </ul>
+        <br>
+      <p class="is-size-7">Un trabajo colaborativo entre la <a href="https://sanmartin.gob.ar" class="has-text-info" target="_blank">Municipalidad de San Martin</a> y fundación <a href="https://democraciaenred.org" class="has-text-info" target="_blank">Democracia en Red</a></p>
+      <p class="is-size-7">Con la tecnología de <a href="https://virtuagora.org/" class="has-text-info" target="_blank"><img src="{{asset('img/logo-v-white.svg')}}" style="width:15px; vertical-align: top; margin: 0 3px;" alt=""/>Virtuagora</a></p>
+      </div>
+      <div class="column is-4 has-text-centered">
+      <br>
+      <img src="{{asset('img/msm-logo.svg')}}" class="image is-centered" style="width:150px;" alt="Logo Presupuesto Participativo de San Martín">
+      </div>
+      <div class="column is-4 has-text-centered is-size-7-touch">
+      <br class="is-hidden-desktop">
+        Calle 52 (Belgrano) N° 3747
+        <br>mesadeayudainformatica@sanmartin.gov.ar
+        <br>4830-0380 / 4830-0810
+        <br>Buenos Aires · Argentina 
+        <br><b>Municipalidad de San Martín</b>
+      </div>
+    </div>
+  </div>
+</footer>
