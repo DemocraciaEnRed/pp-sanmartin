@@ -7,8 +7,8 @@
   <h5 class="subtitle is-5">Presentá proyectos para tu barrio hasta el {{options()['proposals-deadline']|date("d/m/Y")}}</h5>
   <countdown-closing date="{{options()['proposals-deadline']}}" what="El formulario" style="margin-bottom: 30px;"></countdown-closing>
 {% elseif is_state('pre-vote') %}
-  <h5 class="title is-4">¡Pronto comienza la votación 2019!</h5>
-  <h5 class="subtitle is-5">¡Se viene la votación de #PPSanLorenzo 2019, conocé los proyectos que participarán!</h5>
+  <h5 class="title is-4">¡Pronto comienza la votación 2020!</h5>
+  <h5 class="subtitle is-5">¡Se viene la votación de #PPSanLorenzo 2020, conocé los proyectos que participarán!</h5>
   <countdown-to date="{{options()['vote-launch']}}" what="El formulario" style="margin-bottom: 30px;"></countdown-closing>
 {% elseif is_state('vote') %}
   <h5 class="title is-4">¡Los proyectos se encuentran disponibles para votación!</h5>
