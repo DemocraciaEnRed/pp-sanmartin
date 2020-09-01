@@ -52,7 +52,7 @@
     "@babel/preset-env": "^7.3.1",
     "@chenfengyuan/vue-qrcode": "^1.0.1",
     "animate.css": "^3.7.0",
-    "buefy": "^0.6.5",
+    "buefy": "^0.7.2",
     "chart.js": "^2.7.2",
     "cross-env": "^5.2.0",
     "facebook-sdk-promise": "^1.2.1",
